@@ -29,6 +29,10 @@ a {
     display: none;
 }
 
+.position-relative {
+    position: relative!important;
+}
+
 .wrapper {
     min-height: 100vh;
     display: flex;
@@ -256,5 +260,33 @@ a {
 }
 
 .footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-sub-menu {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    z-index: 1;
+    border: 1px solid #70757a;
+    background-color: #fff;
+}
+
+.footer-sub-item {}
+
+.footer-sub-link {
+    width: 100%;
+    display: block;
+    padding: 1.5rem;
+    border: 0;
+    background-color: transparent;
+    color: #70757a;
+    font-size: 1.4rem;
+    text-align: left;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.footer-sub-link:hover {
     text-decoration: underline;
 }
